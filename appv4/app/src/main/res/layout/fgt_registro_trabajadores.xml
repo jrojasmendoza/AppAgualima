@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fRegistroTrabajador"
+    >
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:orientation="vertical"
+        android:paddingLeft="30dp">
+
+        <EditText
+            android:id="@+id/txtDni"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:hint="DNI"
+            android:layout_gravity="center"
+            android:inputType="number"
+            android:maxLength="12"
+            />
+
+        <EditText
+            android:id="@+id/txtNonbre"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_gravity="center"
+            android:inputType="text"
+            android:hint="Nombre" />
+
+        <EditText
+            android:id="@+id/txtApePat"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_gravity="center"
+            android:inputType="text"
+            android:hint="Apellido paterno" />
+
+        <EditText
+            android:id="@+id/txtApeMat"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_gravity="center"
+            android:inputType="text"
+            android:hint="Apellido materno" />
+
+
+        <EditText
+            android:id="@+id/txtTipodoc"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+            android:hint="Tipo de Documento" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilPlannedDate"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/txtFechanac"
+                android:hint="fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:focusable="false"
+                android:clickable="true"
+                 />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:hint="REGISTRAR" />
+
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>
